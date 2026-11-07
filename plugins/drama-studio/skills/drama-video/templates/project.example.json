@@ -1,0 +1,82 @@
+{
+  "title": "Чужой подарок",
+  "format": "16:9",
+  "lang": "ru",
+  "style": "Semi-realistic 2D digital illustration in the style of modern animated drama-story YouTube channels: clean confident line art, smooth cel shading with soft gradients, slightly stylised attractive faces with large expressive eyes and defined lips, realistic body proportions, warm cinematic interior lighting (amber lamps, recessed ceiling lights), cool blue-violet evening city light through big windows, rich but slightly desaturated colours, gentle rim light on characters, crisp detailed background, no photorealism, no 3D render look, no anime chibi.",
+  "characters": [
+    {
+      "id": "anna",
+      "name": "Анна",
+      "look": "woman, about 28, warm light-olive skin, long wavy chestnut hair over one shoulder, hazel eyes, small gold hoop earrings, mustard-yellow knit cardigan over a white top, dark blue straight jeans, white sneakers",
+      "voice": "Rachel"
+    },
+    {
+      "id": "igor",
+      "name": "Игорь",
+      "look": "man, about 30, fair skin, short dark-blond hair with a side part, light stubble, grey-blue eyes, navy crew-neck sweater, beige chinos, brown leather watch",
+      "voice": "Brian"
+    }
+  ],
+  "locations": [
+    {
+      "id": "kitchen",
+      "desc": "modern open-plan kitchen-living room in a city apartment in the evening: white kitchen island with three tall stools, pendant lamps glowing warm, dark wood floor, grey sofa in the back, large window with a blue-violet evening city skyline and lit windows"
+    }
+  ],
+  "music": {
+    "prompt": "soft tense cinematic underscore, low piano notes and warm synth pad, slow tempo, subtle suspense, no drums, no melody hook, background for dialogue",
+    "seconds": 45,
+    "volume": 0.14
+  },
+  "subtitles": { "burn": false, "names": false },
+  "shots": [
+    {
+      "id": "s01",
+      "location": "kitchen",
+      "framing": "wide",
+      "chars": ["anna", "igor"],
+      "image_prompt": "Igor stands at the kitchen island holding a small open jewellery box, looking at it with suspicion. Anna walks in from the left carrying a handbag, stopping mid-step.",
+      "motion_prompt": "Igor slowly turns his head from the box to Anna; Anna freezes and slightly lowers her bag.",
+      "lines": [
+        { "id": "l001", "who": "igor", "text": "Анна, это что? Я нашёл это в твоей сумке, когда искал ключи.", "emotion": "calm but cold" },
+        { "id": "l002", "who": "anna", "text": "Ты рылся в моей сумке?", "emotion": "defensive" }
+      ]
+    },
+    {
+      "id": "s02",
+      "location": "kitchen",
+      "framing": "two_shot",
+      "chars": ["anna", "igor"],
+      "image_prompt": "Tight two-shot across the kitchen island: Igor on the left holding the jewellery box up between them, Anna on the right with crossed arms, annoyed expression.",
+      "lines": [
+        { "id": "l003", "who": "igor", "text": "Я искал ключи. Это серьги за сорок тысяч. Откуда они?", "emotion": "pressing" },
+        { "id": "l004", "who": "anna", "text": "Это подарок. От коллеги.", "emotion": "evasive, looks away" }
+      ]
+    },
+    {
+      "id": "s03",
+      "location": "kitchen",
+      "framing": "insert",
+      "chars": [],
+      "image_prompt": "Close-up of a paper receipt lying on the white kitchen island next to the open jewellery box with gold earrings.",
+      "insert_text": "a store receipt with the header \"JEWELRY STORE\" and the line \"PAID BY CARD **** 4417 — 40 000 RUB\"",
+      "animate": false,
+      "lines": [
+        { "id": "l005", "who": "igor", "text": "Тогда почему чек оплачен с нашей общей карты?", "emotion": "quiet, sharp" }
+      ]
+    },
+    {
+      "id": "s04",
+      "location": "kitchen",
+      "framing": "close",
+      "chars": ["anna"],
+      "image_prompt": "Close-up of Anna, caught off guard, eyes wide, lips parted, one hand touching her necklace.",
+      "motion_prompt": "Anna blinks, swallows, and looks down, then back up.",
+      "lipsync": true,
+      "lines": [
+        { "id": "l006", "who": "anna", "text": "Я… я хотела тебе всё объяснить.", "emotion": "guilty, hesitant" }
+      ],
+      "hold": 1.2
+    }
+  ]
+}
