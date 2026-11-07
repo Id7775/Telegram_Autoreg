@@ -1,0 +1,11 @@
+{
+  "name": "id7775-plugins",
+  "owner": { "name": "id7775" },
+  "plugins": [
+    {
+      "name": "drama-studio",
+      "source": "./plugins/drama-studio",
+      "description": "Ролики-драмы в стиле ИИ-мультсериалов: персонажи, кадры, оживление, голоса, монтаж в MP4."
+    }
+  ]
+}
